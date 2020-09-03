@@ -1,26 +1,3 @@
-// // Assignment Code
-// var generateBtn = document.querySelector("#generate");
-// var passwordText = document.querySelector("#password");
-
-// var lowerCase = "abcdefghijklmnopqrstuvwxyz".split("");
-// var upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
-// var number = "1234567890".split("");
-// var special = "~!@#$%^&*()_+".split("");
-
-//   passwordText.value = password;
-
-// // Add event listener to generate button
-// generateBtn.addEventListener("click", writePassword);
-
-// function writePassword(onclick = generateBtn){
-// var passwordLength = prompt("How many characters would you like? Please enter a number between 8 and 128.");
-
-// let passwordLength = "";
-
-// if (isNaN(passwordLength) || passwordLength < 8 || passwordLength > 128){
-//   alert("Please choose a number between 8 and 128.")
-//   return;
-// }
 
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
@@ -72,15 +49,15 @@ function generatePassword() {
     password = password + special;
   }
 
-  // if (
-  //   confirmLowercase === false &&
-  //   confirmUppercase === false &&
-  //   confirmSpecial === false &&
-  //   confirmNumber === false
-  // ) {
-  //   alert("Please select at least one character type.");
-  //   return ;
-  // }
+  if (
+    confirmLowerCase === false &&
+    confirmUpperCase === false &&
+    confirmSpecial === false &&
+    confirmNumber === false
+  ) {
+    alert("Please select at least one character type.");
+    return "";
+  }
 
 
   for (var i = 0; i < passwordLength; i++) {
