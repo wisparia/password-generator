@@ -1,6 +1,6 @@
 # Password-Generator
 
-![Image of Screenshot](./passwordGeneratorDemo.png)
+![Image of Screenshot](passwordGeneratorDemo.png)
 
 ## Demo
 (https://samisully.github.io/password-generator/)
